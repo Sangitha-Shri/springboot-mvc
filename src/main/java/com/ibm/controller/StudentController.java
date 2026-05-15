@@ -23,16 +23,16 @@ public class StudentController {
 	private StudentService service;
 		
 	//fetch all students
-//	@GetMapping("/all")
-//	public List<Student> getStudents(){
-//		return service.getAllStudents();
-//	}
+	@GetMapping("/all")
+	public List<Student> getStudents(){
+		return service.getAllStudents();
+	}
 	
 	//create student
-//	@GetMapping("/add")
-//	public List<Student> add(){
-//		return service.addStudent(new Student(104,"Shehnaz", "EEE"));
-//	}
+	@GetMapping("/add")
+	public List<Student> add(){
+		return service.addStudent(new Student(104,"Shehnaz", "EEE"));
+	}
 	
 	//update student
 //	@PostMapping("/{id}")
